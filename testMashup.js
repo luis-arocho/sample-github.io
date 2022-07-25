@@ -7,7 +7,7 @@
  */
 var prefix = window.location.pathname.substr( 0, window.location.pathname.toLowerCase().lastIndexOf( "/extensions" ) + 1 );
 var config = {
-	host: 'https://e7ixql68q51ilev.us.qlikcloud.com/',
+	host: 'e7ixql68q51ilev.us.qlikcloud.com/',
 	prefix: '/',
 	port: 443,
 	isSecure: window.location.protocol === "https:",
