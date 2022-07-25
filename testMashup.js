@@ -7,11 +7,11 @@
  */
 var prefix = window.location.pathname.substr( 0, window.location.pathname.toLowerCase().lastIndexOf( "/extensions" ) + 1 );
 var config = {
-	host: 'tenantname.eu.qlikcloud.com',
+	host: 'https://e7ixql68q51ilev.us.qlikcloud.com/',
 	prefix: '/',
 	port: 443,
 	isSecure: window.location.protocol === "https:",
-	webIntegrationId: 'IDgoeshere'
+	webIntegrationId: 'xV3eqA-sz5oEoQbji7YJw1JCQ0nzqvLj'
 };
 //Redirect to login if user is not logged in
 async function login() {
@@ -50,10 +50,10 @@ require( ["js/qlik"], function ( qlik ) {
 		$( '#popup' ).hide();
 	} );
     //open apps -- inserted here --
-	var app = qlik.openApp( 'appid', config );
+	var app = qlik.openApp( '8ae6d9ba-19cc-47ce-8860-e3b6e13ee123', config );
 	
     //get objects -- inserted here --
-	app.visualization.get('objectid').then(function(vis){
+	app.visualization.get('arrXTE').then(function(vis){
     vis.show("QV01");	
 	} );
     
