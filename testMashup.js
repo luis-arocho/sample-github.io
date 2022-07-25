@@ -56,5 +56,7 @@ require( ["js/qlik"], function ( qlik ) {
 	app.visualization.get('arrXTE').then(function(vis){
     vis.show("QV01");	
 	} );
-    
+    	app.visualization.get('MXAQHeM').then(function(vis){
+    vis.show("QV02");	
+	} );
 } );});
