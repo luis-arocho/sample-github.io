@@ -62,7 +62,4 @@ require( ["js/qlik"], function ( qlik ) {
     	app.visualization.get('MXAQHeM').then(function(vis){
     vis.show("QV02");	
 	} );
-	
-	app.getObject('pie_chart','hVKPhn');
-		
 });
