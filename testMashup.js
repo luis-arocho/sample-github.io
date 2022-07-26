@@ -86,4 +86,4 @@ require( ["js/qlik"], function ( qlik ) {
 		}); */
 		/*
 		
-} );});
+// } );});
