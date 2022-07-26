@@ -42,13 +42,16 @@ login().then(() => {
 } );			
 
 require( ["js/qlik"], function ( qlik ) {
-	qlik.on( "error", function ( error ) {
+	
+    qlik.on( "error", function ( error ) {
 		$( '#popupText' ).append( error.message + "<br>" );
 		$( '#popup' ).fadeIn( 1000 );
 	} );
-	$( "#closePopup" ).click( function () {
+	
+    $( "#closePopup" ).click( function () {
 		$( '#popup' ).hide();
 	} );
+   
     //open apps -- inserted here --
 	var app = qlik.openApp( '8ae6d9ba-19cc-47ce-8860-e3b6e13ee123', config );
 	
@@ -62,4 +65,4 @@ require( ["js/qlik"], function ( qlik ) {
 	
 
 		
-} );});
+} );
