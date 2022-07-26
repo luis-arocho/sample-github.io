@@ -65,8 +65,6 @@ require( ["js/qlik"], function ( qlik ) {
 	
 	app.getObject('pie_chart','hVKPhn');
 		
-} );
-
 //DOWNLOAD BY USING SELECT OPTIONS INSPIRED BY https://jsfiddle.net/mindspank/hozs7db4/ PER https://community.qlik.com/t5/Qlik-Sense-Integration-Extensions-APIs/Creating-a-dynamic-exportData-button-re-using-same-button-for/td-p/1284197
 $(document).ready(function() {
     //export and download starts 
