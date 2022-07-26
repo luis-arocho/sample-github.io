@@ -60,10 +60,12 @@ require( ["js/qlik"], function ( qlik ) {
 	app.visualization.get('arrXTE').then(function(vis){
     vis.show("QV01");	
 	} );
-    app.visualization.get('MXAQHeM').then(function(vis){
+	app.visualization.get('MXAQHeM').then(function(vis){
     vis.show("QV02");	
 	} );
-	
-app.getObject('pie_chart','hVKPhn');
+	app.visualization.get('hVKPhn').then(function(vis){
+    vis.show("QV03");	
+	} );
+	app.getObject('pie_chart','hVKPhn');
 		
 } );});
