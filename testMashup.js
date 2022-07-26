@@ -79,7 +79,7 @@ require( ["js/qlik"], function ( qlik ) {
 			 });   
 		});
 	//	TYPICAL IMPLEMENTATION FOR A SINGLE EXPORT BUTTON - WORKS BY OPENING THE FILE ON BROWSER LOAD
-/* 		app.visualization.get('arrXTE').then(function(vis){
+ 		app.visualization.get('arrXTE').then(function(vis){
 			vis.exportData({format:'CSV_C', state: 'A'}).then(function (link) {
 				window.open(link);
 			});
