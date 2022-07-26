@@ -65,3 +65,4 @@ require( ["js/qlik"], function ( qlik ) {
 	
 	app.getObject('pie_chart','hVKPhn');
 		
+});
