@@ -38,9 +38,9 @@ async function login() {
 login().then(() => {
     require.config( {
     baseUrl: ( config.isSecure ? "https://" : "http://" ) + config.host + (config.port ? ":" + config.port : "") + config.prefix + "resources",
-    webIntegrationId: config.webIntegrationId
-    }
- });			
+    webIntegrationId: config.webIntegrationId   
+} );
+ 			
 
 require( ["js/qlik"], function ( qlik ) {
 	
@@ -63,4 +63,7 @@ require( ["js/qlik"], function ( qlik ) {
     app.visualization.get('MXAQHeM').then(function(vis){
     vis.show("QV02");	
 	} );
-});
+	
+
+		
+} );});
